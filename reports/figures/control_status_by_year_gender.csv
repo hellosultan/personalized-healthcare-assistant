@@ -1,0 +1,25 @@
+year,gender,control_status,n
+2023,Female,Partly Controlled,55686
+2023,Female,Poorly Controlled,5465
+2023,Female,Well Controlled,514468
+2023,Female,,49943
+2023,Male,Partly Controlled,56036
+2023,Male,Poorly Controlled,5283
+2023,Male,Well Controlled,513939
+2023,Male,,49728
+2024,Female,Partly Controlled,100062
+2024,Female,Poorly Controlled,9691
+2024,Female,Well Controlled,924849
+2024,Female,,89527
+2024,Male,Partly Controlled,99866
+2024,Male,Poorly Controlled,9716
+2024,Male,Well Controlled,925245
+2024,Male,,90179
+2025,Female,Partly Controlled,67033
+2025,Female,Poorly Controlled,6428
+2025,Female,Well Controlled,617277
+2025,Female,,59373
+2025,Male,Partly Controlled,67232
+2025,Male,Poorly Controlled,6540
+2025,Male,Well Controlled,616720
+2025,Male,,59714

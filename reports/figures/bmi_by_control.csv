@@ -1,0 +1,17 @@
+bmi_category,control_status,n
+Normal,Partly Controlled,34266
+Normal,Poorly Controlled,1173
+Normal,Well Controlled,1204742
+Normal,,107365
+Obese,Partly Controlled,358307
+Obese,Poorly Controlled,40189
+Obese,Well Controlled,1038427
+Obese,,124413
+Overweight,Partly Controlled,48891
+Overweight,Poorly Controlled,1601
+Overweight,Well Controlled,1712263
+Overweight,,152717
+Underweight,Partly Controlled,4451
+Underweight,Poorly Controlled,160
+Underweight,Well Controlled,157066
+Underweight,,13969

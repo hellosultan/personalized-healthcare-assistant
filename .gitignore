@@ -1,0 +1,4 @@
+# Ignore databases and raw data
+data/*.db
+data/raw/*
+!data/raw/README.md   # keep a placeholder if needed
