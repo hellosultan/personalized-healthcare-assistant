@@ -69,18 +69,21 @@ CSV & PNGs exported to reports/figures/:
 📈 Results (Sample Charts)
 ## 📈 Results
 
-- **ROC-AUC (baseline logistic regression):** 0.78  *(example – replace with your JSON value)*  
+- **ROC-AUC (baseline logistic regression):** 0.78 *(example – replace with your JSON value)*  
 - Model identifies poorly controlled asthma patients with meaningful recall.  
 - Visualizations:
 
 | ROC Curve | Confusion Matrix |
 |-----------|------------------|
-| ![ROC Curve](reports/figures/roc_curve.png) | ![Confusion Matrix](reports/figures/confusion_matrix.png) 
-- **Key drivers (coef-based):** see `feature_importance.png` for top positive/negative factors (e.g., higher ER visits, smoking, BMI ↑).
+| ![ROC Curve](reports/figures/roc_curve.png) | ![Confusion Matrix](reports/figures/confusion_matrix.png) |
 
-Control Status by Year & Gender	Age Distribution
+| Control Status by Year & Gender | Age Distribution |
+|---------------------------------|------------------|
+| ![Control Status](reports/figures/control_status_by_year_gender.png) | ![Age Dist](reports/figures/age_distribution.png) |
 
-BMI vs Control Status	ER Visits Distribution
+| BMI vs Control Status | ER Visits Distribution |
+|-----------------------|------------------------|
+| ![BMI vs Control](reports/figures/bmi_by_control.png) | ![ER Visits](reports/figures/er_visits_distribution.png) |
 	
 ⸻
 
