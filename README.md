@@ -76,6 +76,7 @@ CSV & PNGs exported to reports/figures/:
 | ROC Curve | Confusion Matrix |
 |-----------|------------------|
 | ![ROC Curve](reports/figures/roc_curve.png) | ![Confusion Matrix](reports/figures/confusion_matrix.png) 
+- **Key drivers (coef-based):** see `feature_importance.png` for top positive/negative factors (e.g., higher ER visits, smoking, BMI ↑).
 
 Control Status by Year & Gender	Age Distribution
 
