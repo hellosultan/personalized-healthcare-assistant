@@ -1,22 +1,23 @@
-# 🏥 Personalized Healthcare Assistant
+🏥 Personalized Healthcare Assistant
 
-## 🌟 Project Overview
-This project simulates a **Big Data healthcare analytics pipeline** using synthetic asthma patient records.  
-It demonstrates how to generate, store, and analyze **millions of patient records** with industry-ready tools like **Parquet, DuckDB, and Python**.  
+🌟 Project Overview
 
-**Key features:**
-- Synthetic **5M+ patient records** generated (scalable to 50M+)  
-- Data stored as **partitioned Parquet** (year/month)  
-- Queried with **DuckDB** (SQL-on-files, industry standard)  
-- Analytics in **Python + Pandas + Matplotlib**  
-- Exported **KPIs, charts, and model metrics** for business insights  
+This project simulates a Big Data healthcare analytics pipeline using synthetic asthma patient records.
+It demonstrates how to generate, store, and analyze millions of patient records with industry-ready tools like Parquet, DuckDB, and Python.
 
----
+Key features:
+	•	Synthetic 5M+ patient records generated (scalable to 50M+)
+	•	Data stored as partitioned Parquet (year/month)
+	•	Queried with DuckDB (SQL-on-files, industry standard)
+	•	Analytics in Python + Pandas + Matplotlib
+	•	Exported KPIs, charts, and model metrics for business insights
 
-## 🚀 Quick Start
+⸻
 
-### 1. Clone the repo
-```bash
+🚀 Quick Start
+
+1. Clone the repo
+
 git clone https://github.com/hellosultan/personalized-healthcare-assistant.git
 cd personalized-healthcare-assistant
 
@@ -33,11 +34,12 @@ python src/sql/generate_synthetic_asthma.py --rows 1000000 --chunk 100000
 python src/sql/generate_synthetic_asthma.py --rows 5000000 --chunk 100000
 
 4. Run analytics
-	•	Launch Jupyter Notebook:
+
+Launch Jupyter Notebook:
 
 jupyter notebook notebooks/analysis.ipynb
 
-	•	Or run scripts directly:
+Or run scripts directly:
 
 python src/sql/duck_kpis.py
 python src/sql/duck_age_bins.py
@@ -45,9 +47,7 @@ python src/sql/duck_bmi_control.py
 python src/sql/derive_features.py
 python src/sql/train_baseline.py
 
-
 ⸻
-
 📊 Features
 
 ✅ Data Engineering
@@ -74,27 +74,12 @@ All results exported to reports/figures/:
 
 ⸻
 
-## 📈 Results
+📈 Results
+	•	ROC-AUC (baseline logistic regression): 0.78 (example – replace with your JSON value)
+	•	Model identifies poorly controlled asthma patients with meaningful recall.
+	•	Key drivers: ER visits, smoking status, and obesity were positively associated with poor control, while higher FEV1 correlated with better control.
 
-- **ROC-AUC (baseline logistic regression):** 0.78 *(example – replace with your JSON value)*  
-- Model identifies poorly controlled asthma patients with meaningful recall.  
-- Visualizations:
-
-| ROC Curve | Confusion Matrix |
-|-----------|------------------|
-| ![ROC Curve](reports/figures/roc_curve.png) | ![Confusion Matrix](reports/figures/confusion_matrix.png) |
-
-| Control Status by Year & Gender | Age Distribution |
-|---------------------------------|------------------|
-| ![Control Status](reports/figures/control_status_by_year_gender.png) | ![Age Dist](reports/figures/age_distribution.png) |
-
-| BMI vs Control Status | ER Visits Distribution |
-|-----------------------|------------------------|
-| ![BMI vs Control](reports/figures/bmi_by_control.png) | ![ER Visits](reports/figures/er_visits_distribution.png) |
-
-| Feature Importance |
-|--------------------|
-| ![Feature Importance](reports/figures/feature_importance.png) |
+🔹 Visualizations
 
 ROC Curve	Confusion Matrix
 	
@@ -146,9 +131,6 @@ Feature Importance
 ⸻
 
 👨‍💻 Author
-
 Sultan Muhammad
-
-
 
 
