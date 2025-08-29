@@ -93,7 +93,7 @@ All results exported to `reports/figures/`:
 
 ## 📈 Results
 
-* **ROC-AUC (baseline logistic regression):** 0.782
+* **ROC-AUC (baseline logistic regression):** 0.955
 * Model identifies poorly controlled asthma patients with meaningful recall.
 * **Key drivers:** ER visits, smoking status, and obesity were positively associated with poor control, while higher FEV1 correlated with better control.
 
