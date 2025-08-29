@@ -3,6 +3,8 @@
 ## 🌟 Project Overview
 This project simulates a **Big Data healthcare analytics pipeline** using synthetic asthma patient records.  
 It demonstrates how to generate, store, and analyze **millions of patient records** with industry-ready tools like **Parquet, DuckDB, and Python**.  
+> **Note:** All results and figures in this project are based on **synthetic data**.  
+> They illustrate pipeline design and analysis techniques, not real patient outcomes.
 
 **Key features:**
 - Synthetic **5M+ patient records** generated (scalable to 50M+)  
@@ -86,10 +88,12 @@ All results exported to `reports/figures/`:
 * Model metrics (`model_metrics.json`)
 
 ---
+> **Note:** All results and figures are based on **synthetic** data generated for this project.  
+> They illustrate pipeline capabilities and analysis techniques, not real patient outcomes.
 
 ## 📈 Results
 
-* **ROC-AUC (baseline logistic regression):*0.955
+* **ROC-AUC (baseline logistic regression):** 0.782
 * Model identifies poorly controlled asthma patients with meaningful recall.
 * **Key drivers:** ER visits, smoking status, and obesity were positively associated with poor control, while higher FEV1 correlated with better control.
 
@@ -106,9 +110,7 @@ All results exported to `reports/figures/`:
 | BMI vs Control Status                                                                                                                      | ER Visits Distribution                                                                                                                        |
 | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![BMI vs Control](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/bmi_by_control.png) | ![ER Visits](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/er_visits_distribution.png) |
-
-| Feature Importance                                                                                                                                 |
-| -------------------------------------------------------------------------------------------------------------------------------------------------- |
+ |
 | ![Feature Importance](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/feature_importance.png) |
 
 ### 📂 KPI CSVs
