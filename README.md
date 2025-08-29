@@ -87,15 +87,14 @@ All results exported to `reports/figures/`:
 * Charts (`*.png`)
 * Model metrics (`model_metrics.json`)
 
-📈 Results
-	•	ROC-AUC (baseline logistic regression): 0.955
-	•	This indicates the model can reliably distinguish poorly controlled asthma patients from well/partly controlled ones, even on a large synthetic dataset.
-	•	Confusion matrix shows the expected imbalance (more well-controlled than poorly controlled), but recall for high-risk patients remains meaningful.
-	•	Key drivers of poor control:
-	•	ER visits, smoking status, and obesity (BMI) → strongly increase risk.
-	•	Higher FEV1 values → protective against poor control.
-
-⚠️ Note: All results are based on synthetic data. They illustrate pipeline design and analysis techniques, not real patient outcomes.
+### 📈 Results
+* ROC-AUC (baseline logistic regression): 0.955
+* This indicates the model can **reliably distinguish poorly controlled asthma patients** from well/partly controlled ones, even on a large synthetic dataset.
+* **Confusion matrix** shows the expected imbalance (more well-controlled than poorly controlled), but recall for high-risk patients remains meaningful.
+### Key drivers of poor control:
+* ER visits, smoking status, and obesity (BMI) → strongly increase risk.
+* Higher FEV1 values → protective against poor control.
+>️ **Note:** All results are based on **synthetic data**. They illustrate pipeline design and analysis techniques, not real patient outcomes.
 
 ### 🔹 Visualizations & Insights
 
@@ -109,9 +108,9 @@ All results exported to `reports/figures/`:
 
 | BMI vs Control Status                                                                                                                      | ER Visits Distribution                                                                                                                        |
 | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![BMI vs Control](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/bmi_by_control.png) BMI vs Control Status: Overweight and obese groups have a higher proportion of poorly controlled patients, consistent with known asthma risk factors. | ![ER Visits](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/er_visits_distribution.png) |
+| ![BMI vs Control](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/bmi_by_control.png) BMI vs Control Status: Overweight and obese groups have a higher proportion of poorly controlled patients, consistent with known asthma risk factors. | ![ER Visits](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/er_visits_distribution.png) ER Visits Distribution: Poorly controlled patients account for most ER visits, showing the model captures clinically meaningful utilization patterns.|
  |
-| ![ER Visits Distribution](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/feature_importance.png)ER Visits Distribution: Poorly controlled patients account for most ER visits, showing the model captures clinically meaningful utilization patterns.|
+| ![Feature Importance](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/feature_importance.png)|
 
 	•	Feature Importance: Logistic regression coefficients indicate which features drive predictions.
 	•	Positive drivers (higher risk): ER visits, smoking, obesity.
