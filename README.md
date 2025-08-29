@@ -87,31 +87,35 @@ All results exported to `reports/figures/`:
 * Charts (`*.png`)
 * Model metrics (`model_metrics.json`)
 
----
-> **Note:** All results and figures are based on **synthetic** data generated for this project.  
-> They illustrate pipeline capabilities and analysis techniques, not real patient outcomes.
+📈 Results
+	•	ROC-AUC (baseline logistic regression): 0.955
+	•	This indicates the model can reliably distinguish poorly controlled asthma patients from well/partly controlled ones, even on a large synthetic dataset.
+	•	Confusion matrix shows the expected imbalance (more well-controlled than poorly controlled), but recall for high-risk patients remains meaningful.
+	•	Key drivers of poor control:
+	•	ER visits, smoking status, and obesity (BMI) → strongly increase risk.
+	•	Higher FEV1 values → protective against poor control.
 
-## 📈 Results
+⚠️ Note: All results are based on synthetic data. They illustrate pipeline design and analysis techniques, not real patient outcomes.
 
-* **ROC-AUC (baseline logistic regression):** 0.955
-* Model identifies poorly controlled asthma patients with meaningful recall.
-* **Key drivers:** ER visits, smoking status, and obesity were positively associated with poor control, while higher FEV1 correlated with better control.
-
-### 🔹 Visualizations
+### 🔹 Visualizations & Insights
 
 | ROC Curve                                                                                                                        | Confusion Matrix                                                                                                                               |
 | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![ROC Curve](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/roc_curve.png) | ![Confusion Matrix](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/confusion_matrix.png) |
+| ![ROC Curve](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/roc_curve.png) ROC Curve: Shows model discrimination ability (AUC=0.955). A curve well above the diagonal means the model separates poorly vs well-controlled patients much better than random. | ![Confusion Matrix](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/confusion_matrix.png) Confusion Matrix: Highlights class imbalance — most patients are well-controlled, but the model still identifies a meaningful share of poorly controlled cases.|
 
 | Control Status by Year & Gender                                                                                                                           | Age Distribution                                                                                                                       |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Control Status](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/control_status_by_year_gender.png) | ![Age Dist](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/age_distribution.png) |
+| ![Control Status](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/control_status_by_year_gender.png) Control Status by Year & Gender: Tracks asthma control trends across time and demographics. Females and males show similar patterns, with most patients remaining well-controlled.| ![Age Dist](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/age_distribution.png) Age Distribution: Synthetic population skews toward adults; elderly and children are underrepresented, which reflects how the dataset was generated.|
 
 | BMI vs Control Status                                                                                                                      | ER Visits Distribution                                                                                                                        |
 | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![BMI vs Control](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/bmi_by_control.png) | ![ER Visits](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/er_visits_distribution.png) |
+| ![BMI vs Control](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/bmi_by_control.png) BMI vs Control Status: Overweight and obese groups have a higher proportion of poorly controlled patients, consistent with known asthma risk factors. | ![ER Visits](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/er_visits_distribution.png) |
  |
-| ![Feature Importance](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/feature_importance.png) |
+| ![ER Visits Distribution](https://raw.githubusercontent.com/hellosultan/personalized-healthcare-assistant/main/reports/figures/feature_importance.png)ER Visits Distribution: Poorly controlled patients account for most ER visits, showing the model captures clinically meaningful utilization patterns.|
+
+	•	Feature Importance: Logistic regression coefficients indicate which features drive predictions.
+	•	Positive drivers (higher risk): ER visits, smoking, obesity.
+	•	Negative drivers (protective): Higher lung function (FEV1), normal BMI.
 
 ### 📂 KPI CSVs
 
